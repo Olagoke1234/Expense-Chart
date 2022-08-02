@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(27, 66%, 92%);
+}
+
+main {
+  width: 350px;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+#header h1 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+
+#header p {
+  font-size: 23px;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+
+#circles {
+  content: "";
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: hsl(25, 47%, 15%);
+}
+
+#circles::before {
+  content: "";
+  position: absolute;
+  right: 30px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2.5px solid white;
+}
+
+#chart-area {
+  padding: 20px;
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 8px;
+}
+
+#chart-area h1 {
+  font-size: 23px;
+  margin-bottom: 10px;
+  color: hsl(25, 47%, 15%);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+#charts {
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bars p {
+  color: hsl(28, 10%, 53%);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.chart {
+  height: 150px;
+  width: 35px;
+  color: bisque;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+hr {
+  opacity: 0.2;
+  background-color: hsl(28, 10%, 53%);
+  height: 1px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+#monthly-bal h2 {
+  font-size: 15px;
+  color: hsl(28, 10%, 53%);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#monthly-bal p {
+  font-size: 30px;
+  color: hsl(25, 47%, 15%);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+
+#percentage {
+  text-align: right;
+}
+
+#percentage h3 {
+  font-size: 14px;
+  color: hsl(25, 47%, 15%);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+
+#percentage p {
+  font-size: 15px;
+  color: hsl(28, 10%, 53%);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}

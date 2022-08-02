@@ -9,7 +9,11 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Expenses chart component</title>
 
     <style>
@@ -24,9 +28,9 @@
   </head>
   <body>
     <main>
-      <header>
+      <header id="header">
         <div id="total-bal">
-          <h1>My Balance</h1>
+          <h1>My balance</h1>
           <p>$921.48</p>
         </div>
         <div id="circles">
@@ -36,13 +40,34 @@
       <div id="chart-area">
         <h1>Spending - Last 7 days</h1>
         <div id="charts">
-          <div id="chart-mon"></div>
-          <div id="chart-tue"></div>
-          <div id="chart-wed"></div>
-          <div id="chart-thur"></div>
-          <div id="chart-fri"></div>
-          <div id="chart-sat"></div>
-          <div id="chart-sun"></div>
+          <div class="bars">
+            <div class="chart" id="chart-mon"></div>
+            <p>mon</p>
+          </div>
+          <div class="bars">
+            <div class="chart" id="chart-tue"></div>
+            <p>tue</p>
+          </div>
+          <div class="bars">
+            <div class="chart" id="chart-wed"></div>
+            <p>wed</p>
+          </div>
+          <div class="bars">
+            <div class="chart" id="chart-thur"></div>
+            <p>thur</p>
+          </div>
+          <div class="bars">
+            <div class="chart" id="chart-fri"></div>
+            <p>fri</p>
+          </div>
+          <div class="bars">
+            <div class="chart" id="chart-sat"></div>
+            <p>sat</p>
+          </div>
+          <div class="bars">
+            <div class="chart" id="chart-sun"></div>
+            <p>sun</p>
+          </div>
         </div>
         <hr />
         <footer>
